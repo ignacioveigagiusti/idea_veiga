@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans|Fuggles&display=swap'/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <img class='logo' src="Images/logoISVcirculo.svg" alt="Logo" width="100%" height=100%/> 
+        <div class='pagetitle'>
+            <h1>Ignacio Veiga |</h1><h1> Ingeniería Acústica</h1>
+        </div>
+        <nav>
+            <ul class=menuList>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Pages/materialesyproductos.html">Materiales y Productos</a></li>
+                <li><a href="Pages/servicios.html">Servicios</a></li>
+                <li><a href="Pages/caracteristicas.html">Características</a></li>
+                <li><a href="Pages/nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <main>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                    <img src='Images/Auditorium1.jpg' alt='Auditorio rediseñado' width=100%/>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                    <img src='Images/Auditorium2.jpg' alt='Auditorio rediseñado' width=100%/>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                    <img src='Images/Auditorium3.jpg' alt='Auditorio rediseñado' width=100%/>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                    <img src='Images/Auditorium4.jpg' alt='Auditorio rediseñado' width=100%/>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)" width=0%>&#10094;</a>
+            <a class="next" onclick="plusSlides(1)" width=0%>&#10095;</a>
+        </div>
+  
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        
+        <script type="text/javascript" src="js/slideshow.js"></script>   
+
+        <section class='indexsection'>
+            <article class='novedades'>
+                <div>
+                    <h2>Novedades</h2>
+                </div>
+                <div class='indexline'>
+                    <div class='date date--start'>
+                        <p class='date__month'>
+                            Ago
+                        </p>
+                        <p class='date__day'>
+                            01
+                        </p>
+                    </div>
+                    <span>-</span> 
+                    <div class='date date--end'>
+                        <p class='date__month'>
+                            Ago
+                        </p>
+                        <p class='date__day'>
+                            05
+                        </p>
+                    </div>
+                    <p class='indexline indexline__news'> - INTER-NOISE - 50º Congreso y Exposición Internacional sobre Ingeniería de Control de Ruido</p>
+                </div>
+                <div class='indexline'>
+                    <div class='date date--start'>
+                        <p class='date__month'>
+                            Ago
+                        </p>
+                        <p class='date__day'>
+                            28
+                        </p>
+                    </div>
+                    <span>-</span> 
+                    <div class='date date--end'>
+                        <p class='date__month'>
+                            Ago
+                        </p>
+                        <p class='date__day'>
+                            31
+                        </p>
+                    </div>
+                    <p class='indexline__news'> - FIA 2020 - XII Congreso Iberoamericano De Acústica</p>
+                </div>
+                <div class='indexline'>
+                    <div class='date date--start'>
+                        <p class='date__month'>
+                            Oct
+                        </p>
+                        <p class='date__day'>
+                            25
+                        </p>
+                    </div>
+                    <span>-</span> 
+                    <div class='date date--end'>
+                        <p class='date__month'>
+                            Oct
+                        </p>
+                        <p class='date__day'>
+                            27
+                        </p>
+                    </div>
+                    <p class='indexline__news'> - EAA - Congreso EuroNoise 2021</p>
+                </div>
+                <div class='indexline'>
+                    <div class='date date--start'>
+                        <p class='date__month'>
+                            Oct
+                        </p>
+                        <p class='date__day'>
+                            25
+                        </p>
+                    </div>
+                    <span>-</span> 
+                    <div class='date date--end'>
+                        <p class='date__month'>
+                            Oct
+                        </p>
+                        <p class='date__day'>
+                            27
+                        </p>
+                    </div>
+                    <p class='indexline__news'> - TECNIACÚSTICA - 52º Congreso Español de Acústica</p>
+                </div>
+            </article>       
+            
+            <article class='apps'>    
+                <div>
+                    <h2>Aplicaciones y Enlaces Útiles</h2>
+                </div> 
+                <div>    
+                    <a href=https://calculadoratlapp.herokuapp.com target="_blank"><img src='Images/calculator.svg' class=icon></a>
+                    <h3><a href=https://calculadoratlapp.herokuapp.com target="_blank">Calculadora TL</a></h3>
+                </div>
+            </article>
+        </section>
+    </main>
+            
+    <footer>
+        <ul class=socialMedia>
+            <li><a href=https://www.facebook.com/Trent.Sebastian.23 target="_blank"><img src='Images/icons8-facebook.svg'></a></li>
+            <li><a href=https://twitter.com/NachTrent target="_blank"><img class='twitter' src='Images/icons8-twitter.svg'></a></li>
+            <li><a href=https://www.instagram.com/nachtrent/ target="_blank"><img src='Images/icons8-instagram-logo.svg'></a></li>
+            <li><a href=https://www.linkedin.com/in/ignacio-sebasti%C3%A1n-veiga-2a969b175/ target="_blank"><img src='Images/icons8-linkedin.svg'></a></li>
+        </ul>
+        <h3>© Todos los derechos reservados</h3>
+    </footer>
+            
+        
+</body>
+</html>

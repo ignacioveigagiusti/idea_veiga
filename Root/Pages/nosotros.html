@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans|Fuggles&display=swap'/> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Nosotros</title>
+</head>
+<body>
+    <header>
+        <img class='logo' src="../Images/logoISVcirculo.svg" alt="Logo" width="100%" height=100%/> 
+        <div class='pagetitle'>
+            <h1>Ignacio Veiga |</h1><h1> Ingeniería Acústica</h1>
+        </div>
+        <nav>
+            <ul class=menuList>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="materialesyproductos.html">Materiales y Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="caracteristicas.html">Características</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <main>
+        <section class='nosotros'>
+            <div>
+              <h2>Sobre Nosotros</h2>
+              <p>Somos una companía que busca brindar soluciones acústicas integrales tanto para nuevas construcciones como para tratamiento sobre construcciones existentes.</p>
+              <p>Buscamos siempre hallar una solución acorde a las expectativas sin que los costos de materiales sean excesivamente altos, por eso trabajamos con materiales modernos, ecológicamente responsables y seguros, cuyas propiedades hayan sido apropiadamente ensayadas para garantizar su correcto desempeño.</p>
+              <p>Los invitamos a realizar cualquier consulta que tengan a través del siguiente formulario:</p>
+            </div>
+            <form action="formex.html">
+                <fieldset>
+                    <legend>Formulario de Contacto</legend>
+                    <div>
+                        <label for="condicion">Condición:</label>
+                        <input type="radio" name="condicion" id="cliente" value="cliente"/>
+                        <label for="cliente" class='radios'>Cliente</label>
+                        <input type="radio" name="condicion" id="tecnico" value="tecnico"/>
+                        <label for="tecnico" class='radios'>Técnico/Ingeniero</label>
+                    </div>
+                    
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre"/>
+                    </div>
+                    
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido"/>   
+                    </div>
+                    
+                    <div>
+                        <label for="cansulta">Consulta sobre:</label>
+                        <select name="consulta">
+                        <option value="M">Materiales, Productos y Características</option>
+                        <option value="S">Servicios</option>
+                        <option value="P">Costos y Presupuestos</option>
+                        <option value="O">Otros</option>
+                        </select>   
+                    </div>
+                    
+                    <div>
+                        <label for="consulta">Consulta:</label>
+                        <textarea name="consulta" rows=5></textarea>
+                    </div>
+                    
+                    <div>
+                        <input class='button button--submit' type="submit" value="Enviar"/>  
+                        <input class='button button--reset' type="reset" value="Reestablecer"/>
+                    </div>
+                </fieldset>
+            </form>
+        </section> 
+        
+    </main>
+                
+    <footer>
+        <ul class=socialMedia>
+            <li><a href=https://www.facebook.com/Trent.Sebastian.23 target="_blank"><img src='../Images/icons8-facebook.svg'></a></li>
+            <li><a href=https://twitter.com/NachTrent target="_blank"><img class='twitter' src='../Images/icons8-twitter.svg'></a></li>
+            <li><a href=https://www.instagram.com/nachtrent/ target="_blank"><img src='../Images/icons8-instagram-logo.svg'></a></li>
+            <li><a href=https://www.linkedin.com/in/ignacio-sebasti%C3%A1n-veiga-2a969b175/ target="_blank"><img src='../Images/icons8-linkedin.svg'></a></li>
+        </ul>
+        <h3>© Todos los derechos reservados</h3>
+    </footer>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+</body>
+</html>
