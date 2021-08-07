@@ -252,7 +252,7 @@ td ol {
 }
 
 .apps div h3:hover{
-    animation: skew 1.5s linear infinite;
+    animation: skew 1.25s linear infinite;
 }
 
 @keyframes dancing {
