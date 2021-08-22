@@ -52,55 +52,59 @@
     </header>
 
     <main>
-        <section class='nosotros'>
-            <div>
+        <section class='nosotros row'>
+            <div class='col-lg'>
               <h2>Sobre Nosotros</h2>
               <p>Somos una companía que busca brindar soluciones acústicas integrales tanto para nuevas construcciones como para tratamiento sobre construcciones existentes.</p>
               <p>Buscamos siempre hallar una solución acorde a las expectativas sin que los costos de materiales sean excesivamente altos, por eso trabajamos con materiales modernos, ecológicamente responsables y seguros, cuyas propiedades hayan sido apropiadamente ensayadas para garantizar su correcto desempeño.</p>
               <p>Los invitamos a realizar cualquier consulta que tengan a través del siguiente formulario:</p>
             </div>
-            <form action="formex.html">
-                <fieldset>
-                    <legend>Formulario de Contacto</legend>
-                    <div class="form-group">
+            <div class='col-lg'>
+                <form action="formex.html">
+                    <fieldset>
+                        <legend>Formulario de Contacto</legend>
                         <label for="condicion">Condición:</label>
-                        <input type="radio" name="condicion" id="cliente" value="cliente"/>
-                        <label for="cliente" class='radios'>Cliente</label>
-                        <input type="radio" name="condicion" id="tecnico" value="tecnico"/>
-                        <label for="tecnico" class='radios'>Técnico/Ingeniero</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre"/>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido"/>   
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="cansulta">Consulta sobre:</label>
-                        <select name="consulta">
-                        <option value="M">Materiales, Productos y Características</option>
-                        <option value="S">Servicios</option>
-                        <option value="P">Costos y Presupuestos</option>
-                        <option value="O">Otros</option>
-                        </select>   
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="consulta">Consulta:</label>
-                        <textarea name="consulta" rows=5></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input class='button button--submit' type="submit" value="Enviar"/>  
-                        <input class='button button--reset' type="reset" value="Reestablecer"/>
-                    </div>
-                </fieldset>
-            </form>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="condicion" id="cliente" value="cliente"/>
+                            <label class="form-check-label" for="cliente" class='radios'>Cliente</label>
+                        </div>
+                        <div class="form-check">    
+                            <input class="form-check-input" type="radio" name="condicion" id="tecnico" value="tecnico"/>
+                            <label class="form-check-label" for="tecnico" class='radios'>Técnico/Ingeniero</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input class="form-control" type="text" name="nombre"/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label>
+                            <input class="form-control" type="text" name="apellido"/>   
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cansulta">Consulta sobre:</label>
+                            <select name="consulta">
+                            <option value="M">Materiales, Productos y Características</option>
+                            <option value="S">Servicios</option>
+                            <option value="P">Costos y Presupuestos</option>
+                            <option value="O">Otros</option>
+                            </select>   
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="consulta">Consulta:</label>
+                            <textarea class="form-control" name="consulta" rows=5></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input class='button button--submit' type="submit" value="Enviar"/>  
+                            <input class='button button--reset' type="reset" value="Reestablecer"/>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </section> 
         
     </main>

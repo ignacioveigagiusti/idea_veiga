@@ -78,13 +78,16 @@ h1{
 h2{
     color: midnightblue;
     font-style: italic;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 h3{
+    font-family: 'Open Sans', sans-serif;
     margin:5px;
     border: 1px;
     padding: 2px;
+    font-size: 1rem;
 }
 
 h4, h5, h6{
@@ -431,7 +434,7 @@ td ol {
     padding: 10px;
     display: grid;
     grid-template-columns: 300px auto;
-    grid-template-rows: 3rem auto;
+    grid-template-rows: min-content auto;
     grid-template-areas: 
     'imagen h3'
     'imagen par';
@@ -450,6 +453,7 @@ td ol {
 
 .servicio .head3{
     grid-area: h3;
+    font-size: 1.75rem;
 }
 
 .servicio .par{
@@ -469,61 +473,16 @@ td ol {
     overflow: hidden;
 }
 
-.nosotros{
-    display: flex;
-    flex-flow: row wrap;
-    align-items:center;
-    justify-content:space-evenly;
-}
-
-.nosotros div{
-    min-width: none;
-    flex-basis: 0;
-    flex-grow: 1;
-}
-
-.nosotros form{
-    flex-basis: 0;
-    flex-grow: 1;
-}
-
-.nosotros div h2{
-    margin-bottom: 10px;
-}
-
 form fieldset{
     padding: 10px;
-    text-align: left;
     background-image: url(./Images/logoISV.jpg);
     background-repeat: repeat;
     background-size: 40px;
 }
 
 form fieldset legend{
+    font-size: 1rem;
     font-weight: bolder;
-}
-
-form fieldset label{
-    font-weight:bold;
-    background-color: white;
-}
-
-form fieldset select{
-    font-size: 1em;
-}
-
-form fieldset .button{
-    font-size: 1em;
-}
-
-.radios{
-    font-weight:normal;
-    background-color: white;
-}
-
-textarea {
-    width:250px;
-    height:150px;
 }
 
 .icon{
@@ -624,23 +583,8 @@ iframe{
         font-size: 2em;
     }
 
-    .nosotros{
-        flex-flow: column wrap;
-    }
-
     .servicio .par{
         min-width: 0vh;
-    }
-
-    .nosotros div{
-        min-width: 0vh;
-        width: 75vw;
-    }
-
-    form{
-        min-width: 0vh;
-        width: 60vw;
-        align-self: flex-start;
     }
 
     textarea {
@@ -713,6 +657,11 @@ iframe{
         line-height: 4vh;  
     }
 
+    main h2{
+        font-size: 3vh;
+        line-height: 4vh; 
+    }
+
     .indexline {
         display: grid;
         grid-template-columns: auto auto auto 1fr;
@@ -755,28 +704,11 @@ iframe{
         width:100%;
     }
 
-
-
     #frame{
         min-height: 150vh;
         min-width: 0vh;
         max-width: 90vw;
         width: 100%;
-    }
-
-    .nosotros{
-        flex-flow: column wrap;
-    }
-
-    .nosotros div{
-        min-width: 0vh;
-        width: 75vw;
-    }
-
-    form{
-        min-width: 0vh;
-        width: 60vw;
-        align-self: flex-start;
     }
 
     textarea {
@@ -822,5 +754,9 @@ iframe{
     .navbar-expand-md .navbar-nav {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    h3{
+        font-size: 1.5rem;
     }
 }
