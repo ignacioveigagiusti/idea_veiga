@@ -15,10 +15,10 @@
     <title>Materiales y Productos</title>
 </head>
 <body>
-  <header>
-    <img class='logo' src="../Images/logoISVcirculo.svg" alt="Logo" width="100%" height=100%/> 
-    <div class='pagetitle'>
-      <h1>Ignacio Veiga |</h1><h1> Ingeniería Acústica</h1>
+  <header class='header'>
+    <img class='header__logo' src="../Images/logoISVcirculo.svg" alt="Logo" width="100%" height=100%/> 
+    <div class='header__pagetitle'>
+        <h1>Ignacio Veiga |</h1><h1> Ingeniería Acústica</h1>
     </div>
     <nav class="navbar navbar-expand-sm navbar-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -52,17 +52,22 @@
   </header>
   
   <main>
-    <section class=tabmat>
+    <section>
       <div>
         <h2>Materiales</h2>
       </div>
-      <table>  
-        <tr>
-            <th>Material</th>
-            <th>Características</th>
-            <th>Recomendaciones</th>
-        </tr>
-        <tr class=oddtr><!-- inicio de fila-->   
+    </section>
+    <div class="table-responsive-sm">
+      <table class="table">  
+        <thead>
+          <tr>
+              <th scope="col">Material</th>
+              <th scope="col">Características</th>
+              <th scope="col">Recomendaciones</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr><!-- inicio de fila-->   
           <td>Lana Mineral (Roca, Vidrio)</td>   
           <td>
             <ul>
@@ -80,7 +85,7 @@
             </ol>
           </td>   
         </tr><!-- cierre de fila -->  
-        <tr class=eventr><!-- inicio de otra fila-->   
+        <tr><!-- inicio de otra fila-->   
           <td>Paneles Acústicos (Minerales o de Espuma)</td>   
           <td>
             <ul>
@@ -98,7 +103,7 @@
             </ol>
           </td>  
         </tr><!-- cierre de la segunda fila -->
-        <tr class=oddtr><!-- inicio de tercera fila-->   
+        <tr><!-- inicio de tercera fila-->   
           <td>Madera</td>   
           <td>
             <ul>
@@ -115,7 +120,7 @@
             </ol>
           </td>   
         </tr><!-- cierre de fila -->  
-        <tr class=eventr><!-- inicio de cuarta fila-->   
+        <tr><!-- inicio de cuarta fila-->   
           <td>Acero</td>   
           <td>
             <ul>
@@ -132,8 +137,9 @@
             </ol>
           </td>  
         </tr><!-- cierre de la cuarta fila --> 
+        </tbody>
       </table>
-    </section>
+    </div>
     <section>
       <div>
         <h2>Productos</h2>
@@ -160,7 +166,7 @@
   </main>
       
   <footer>
-    <ul class=socialMedia>
+    <ul class='socialMedia'>
         <li><a href=https://www.facebook.com/Trent.Sebastian.23 target="_blank"><img src='../Images/icons8-facebook.svg'></a></li>
         <li><a href=https://twitter.com/NachTrent target="_blank"><img class='twitter' src='../Images/icons8-twitter.svg'></a></li>
         <li><a href=https://www.instagram.com/nachtrent/ target="_blank"><img src='../Images/icons8-instagram-logo.svg'></a></li>
