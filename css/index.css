@@ -105,7 +105,7 @@ td ol {
   justify-content: center; }
   .servicio .head3 {
     grid-area: h3;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-style: italic;
     font-weight: bold; }
   .servicio .par {
@@ -455,8 +455,15 @@ article {
   .header {
     max-height: none;
     gap: 2vw; }
+  .servicio {
+    display: flex;
+    flex-direction: column;
+    min-width: 30px;
+    width: 100%; }
   .servicio .par {
     min-width: 0vh; }
+  .servicio .imagen {
+    width: 50%; }
   textarea {
     width: 50vw; }
   .date {
@@ -534,6 +541,10 @@ article {
     flex-direction: column;
     min-width: 30px;
     width: 100%; }
+  .servicio .imagen {
+    width: 70%; }
+  .servicio .par {
+    min-width: 0vh; }
   #frame {
     min-height: 150vh;
     min-width: 0vh;
@@ -541,10 +552,6 @@ article {
     width: 100%; }
   textarea {
     width: 50vw; }
-  .servicio .imagen {
-    width: 70%; }
-  .servicio .par {
-    min-width: 0vh; }
   footer {
     font-size: 0.8em; }
   .navbar .navbar-nav .nav-item {

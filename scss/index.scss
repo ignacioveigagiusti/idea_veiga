@@ -329,8 +329,19 @@ article{
         gap: 2vw;  
     }
 
+    .servicio{
+        display: flex;
+        flex-direction: column;
+        min-width: 30px;
+        width: 100%;
+    }
+
     .servicio .par{
         min-width: 0vh;
+    }
+
+    .servicio .imagen {
+        width: 50%;
     }
 
     textarea {
@@ -445,6 +456,14 @@ article{
         width: 100%;
     }
 
+    .servicio .imagen {
+        width: 70%;
+    }
+
+    .servicio .par{
+        min-width: 0vh;
+    }
+
     #frame{
         min-height: 150vh;
         min-width: 0vh;
@@ -454,14 +473,6 @@ article{
 
     textarea {
         width:50vw;
-    }
-
-    .servicio .imagen {
-        width: 70%;
-    }
-
-    .servicio .par{
-        min-width: 0vh;
     }
 
     footer {
