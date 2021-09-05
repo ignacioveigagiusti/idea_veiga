@@ -40,6 +40,7 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards; }
   .header__pagetitle {
+    padding: 10px;
     grid-area: pagetitle;
     display: flex;
     align-items: center;
@@ -504,7 +505,6 @@ article {
     font-size: 2vh;
     gap: 2vw; }
   .header__pagetitle {
-    line-height: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: center; }

@@ -30,6 +30,7 @@ body{
     }
     
     &__pagetitle {
+        padding: 10px;
         grid-area: pagetitle;
         display: flex;
         align-items: center;
