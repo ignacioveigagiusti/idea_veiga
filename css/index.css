@@ -266,8 +266,7 @@ article {
   color: #004086;
   font-weight: bold; }
 
-.navbar li:hover {
-  height: 65%;
+.nav-item:hover {
   background-color: #effdfb; }
 
 /*Secciones y Componentes de la página Index*/
