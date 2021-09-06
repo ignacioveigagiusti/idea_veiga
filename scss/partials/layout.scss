@@ -9,18 +9,20 @@ body{
 }
 
 .header{
+    grid-template-columns: 50px auto; 
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: 'logo pagetitle'
+                        'logo pagetitle'
+                        'navbar navbar';
+    max-height: none;
+    font-size: 2vh;
+    gap: 2vw;  
     grid-area: head;
     background-image: linear-gradient($ISVblue, rgb(0, 0, 50));
     padding: 10px 10px 20px 10px;
     color: whitesmoke;
     display: grid;
-    grid-template-columns: 100px auto; 
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'logo pagetitle'
-                        'logo navbar';
-    max-height: none;
     box-shadow: 0px 2px 5px #888 , 0px -2px 5px #888 ;
-    gap: 1vw;
     
     &__logo {
         grid-area: logo;
@@ -38,12 +40,14 @@ body{
         animation: fadeInAnimation ease 2s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 main{
     grid-area: main;
-    line-height: 32px;
     height: 100%;
     width: 90%;
     font-family: 'Open Sans', sans-serif;
@@ -51,6 +55,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-self: center;
+    font-size: 2vh;
+    line-height: 4vh;
 }
 
 footer{
@@ -61,6 +67,6 @@ footer{
     color: whitesmoke;
     align-self: end;
     width: 100%;
-    font-size: 1em;
+    font-size: 0.8em;
     box-shadow: 0px 2px 5px #888 , 0px -2px 5px #888 ;
 }
