@@ -345,12 +345,7 @@ article{
 
 /*Media Queries*/
 
-@media screen and (min-width: 655px) and (max-width: 875px) {
-    .header{
-        max-height: none;
-        gap: 2vw;  
-    }
-
+@media screen and (min-width: 655px) and (max-width: 768px) {
     .servicio{
         display: flex;
         flex-direction: column;
@@ -364,46 +359,6 @@ article{
 
     .servicio .imagen {
         width: 50%;
-    }
-
-    textarea {
-        width:50vw;
-    }
-
-    .date{
-        padding: 0;
-        margin: 0;
-        display: flex;
-        border: 2px solid midnightblue;
-        background-color: midnightblue;
-        border-radius: 0.5vh;
-        flex-direction: column;
-        align-items: center;
-        height: fit-content;
-    }
-    
-    .date__month{
-        font-size: 0.5em;
-        font-weight: bold;
-        line-height: 1.6em;
-        color: azure;
-        height: 100%;
-        width: 100%;
-    }
-    
-    .date__day{
-        font-size: 1em;
-        padding:0;
-        font-weight: bold;
-        color: midnightblue;
-        background-color: white;
-        height: 100%;
-        width: 100%;
-    }
-
-    .socialMedia li img{
-        height:4vh;
-        width: 4vh;
     }
 }
 
@@ -426,7 +381,7 @@ article{
             font-size: 1.5rem;
         }
         .imagen {
-            width: 1fr;
+            width: 100%;
         }
         .par{
             min-width: 300px;
