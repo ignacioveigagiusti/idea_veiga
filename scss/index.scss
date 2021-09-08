@@ -1,6 +1,7 @@
 @import "partials/base";
 @import "partials/layout";
 @import "partials/components";
+@import "partials/mediaqueries";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 /*Textos*/
@@ -36,19 +37,11 @@ h4, h5, h6{
     font-family: 'Open Sans', sans-serif;
 }
 
-h6 a{
-    color: black;
-}
+/*Animaciones de inicio*/
 
-/*Secciones*/
-
-section {
-    padding: 24px;
-}
-
-article{
-    margin-top: 10px;
-    margin-bottom: 10px;
+@keyframes fadeInAnimation {
+    0% {opacity: 0; transform: scale(0.9,0.9);}
+    100% {opacity: 1;transform: scale(1,1);}
 }
 
 /*Navbar*/
@@ -112,56 +105,57 @@ article{
     background-color:rgb(239, 253, 251);
 }
 
+/*Secciones*/
+
+section {
+    padding: 24px;
+}
+
+article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /*Secciones y Componentes de la página Index*/
+
+.carousel {
+    width: 111.111%;
+    align-self: center;
+}
+
+.carousel-item{
+    transition: transform 1s ease-in-out;;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 1;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
 
 .indexsection {
     padding: 24px 24px;
-}
-
-.novedades {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 8px 0px 32px 0px;
-}
-
-.apps {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 24px 0px 32px 0px;
-    gap: 16px;
-    align-items: flex-start;
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h3 a {
-            text-decoration: none;
-            color: black;
-        }
-    }
-}
-
-.apps div a:hover {
-    animation: dancing 4s linear infinite;
-}
-
-.apps div h3:hover{
-    animation: skew 1.25s linear infinite;
-}
-
-@keyframes dancing {
-    0%{ transform:translate(0px, 0px); }
-    13%{ transform:translate(-2px, 2px);}
-    26%{ transform:translate(-2px, -2px); }
-    39%{ transform:translate(2px, -2px); }
-    52%{ transform:translate(2px, 2px); }
-    65%{ transform:translate(0px, 0px);}
-    78%{ transform:scale(1.1, 1.1);}
-    91%{ transform:scale(1,1);}
-    100%{ transform:translate(0px, 0px);}
-}           
+}  
 
 .indexline{
     font-weight: bold;
@@ -198,6 +192,13 @@ article{
         justify-content: flex-start;
     }
 }
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 8px 0px 32px 0px;
+}     
 
 .date{
     padding: 0;
@@ -243,45 +244,46 @@ article{
     }
 }
 
-@keyframes fadeInAnimation {
-    0% {opacity: 0; transform: scale(0.9,0.9);}
-    100% {opacity: 1;transform: scale(1,1);}
+.apps {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 24px 0px 32px 0px;
+    gap: 16px;
+    align-items: flex-start;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 a {
+            text-decoration: none;
+            color: black;
+        }
+        .apps__link{
+            color: black;
+        }
+    }
 }
 
-.carousel {
-    width: 111.111%;
-    align-self: center;
+.apps .apps__icon:hover {
+    animation: dancing 4s linear infinite;
 }
 
-.carousel-item{
-    transition: transform 1s ease-in-out;;
+.apps div h3:hover{
+    animation: skew 1.25s linear infinite;
 }
 
-.carousel-fade .carousel-inner .item {
-    opacity: 1;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-}
-
-.carousel-fade .carousel-inner .active {
-    opacity: 1;
-}
-
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-    opacity: 1;
-    z-index: 1;
-}
-
-.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
-    opacity: 1;
-}
-
-.carousel-fade .carousel-control {
-    z-index: 2;
-}
+@keyframes dancing {
+    0%{ transform:translate(0px, 0px); }
+    13%{ transform:translate(-2px, 2px);}
+    26%{ transform:translate(-2px, -2px); }
+    39%{ transform:translate(2px, -2px); }
+    52%{ transform:translate(2px, 2px); }
+    65%{ transform:translate(0px, 0px);}
+    78%{ transform:scale(1.1, 1.1);}
+    91%{ transform:scale(1,1);}
+    100%{ transform:translate(0px, 0px);}
+}    
 
 .icon{
     margin: 3vh;
@@ -296,7 +298,7 @@ article{
     overflow: hidden;
     color:azure;    
     text-decoration: none;
-
+    justify-content: center;
     li a{
         display: inline-block;
         overflow: hidden;
@@ -342,84 +344,6 @@ article{
     100% { transform: rotate(0deg); } 
 } 
 
-/*Media Queries*/
-
-@media screen and (min-width: 655px) and (max-width: 768px) {
-    .servicio{
-        display: flex;
-        flex-direction: column;
-        min-width: 30px;
-        width: 100%;
-    }
-
-    .servicio .par{
-        min-width: 0vh;
-    }
-
-    .servicio .imagen {
-        width: 50%;
-    }
-}
-
-@media (min-width: 768px){
-    .navbar-expand-md .navbar-nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    h1{
-        font-size: 2em;    
-    }
-
-    h3{
-        font-size: 1.5rem;
-    }
-
-    .servicio{
-        .head3{
-            font-size: 1.5rem;
-        }
-        .imagen {
-            width: 100%;
-        }
-        .par{
-            min-width: 300px;
-        }
-    }
-
-    .header{
-        grid-template-columns: 100px auto; 
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 'logo pagetitle'
-                            'logo navbar';
-        gap: 1vw;
-        .header__pagetitle{
-            flex-direction: row;
-        }
-    }
-
-    .indexline {
-        display: flex;
-        flex-direction: row;  
-    }
-
-    .servicio{
-        display: grid;
-        grid-template-columns: 300px auto;
-        grid-template-rows: min-content auto;
-        grid-template-areas: 
-        'imagen h3'
-        'imagen par';
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-    }
-
-    #frame{
-        min-height: 120vh;
-        min-width: 411px;
-    }
-
-    footer {
-        font-size: 1em;
-    }
+.rights{
+    text-align: center;
 }
