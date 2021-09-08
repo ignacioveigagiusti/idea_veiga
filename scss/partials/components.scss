@@ -23,6 +23,13 @@ td ol {
         max-height: 196px;
         flex-shrink: 0;
     }
+
+    .products__product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
 }
 
 /*Servicios*/
@@ -50,13 +57,17 @@ td ol {
         grid-area: par;
         min-width: 0px;
     }
+
+    .servicio__imagen{
+        grid-area: imagen;
+        width: 70%;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+    }
 }
 
-.imagen{
-    grid-area: imagen;
-    width: 70%;
-    height: auto;
-}
+
 
 /*Características*/
 
