@@ -55,8 +55,10 @@
     }
 
     .indexline {
-        display: flex;
-        flex-direction: row;  
+        display: grid;
+        grid-template-columns: auto auto auto 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 'date1 hyphen date2 indexlinenews';  
     }
 
     .servicio{

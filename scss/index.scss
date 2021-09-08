@@ -1,7 +1,6 @@
 @import "partials/base";
 @import "partials/layout";
 @import "partials/components";
-@import "partials/mediaqueries";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 /*Textos*/
@@ -347,3 +346,7 @@ article{
 .rights{
     text-align: center;
 }
+
+/*Media Queries*/
+
+@import "partials/mediaqueries";
