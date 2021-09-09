@@ -1,5 +1,11 @@
 /*Media Queries*/
 
+@media screen and (max-width: 410px) {
+    select{
+        width: 50vw;
+    }
+}
+
 @media screen and (min-width: 655px) and (max-width: 768px) {
     .servicio{
         display: flex;
