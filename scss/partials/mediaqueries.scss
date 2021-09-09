@@ -1,5 +1,11 @@
 /*Media Queries*/
 
+@media screen and (max-width: 275px) {
+     .header__pagetitle{
+         font-size: 5vw;
+     }
+}
+
 @media screen and (max-width: 410px) {
     select{
         width: 50vw;
@@ -11,6 +17,24 @@
             width:100%;
             min-width: 0;
         }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .table{
+        
+        .table__hide{
+            display: none;
+        }
+    }
+    
+    section {
+        padding: 12px;
+    }
+    
+    article{
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 
