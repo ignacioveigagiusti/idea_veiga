@@ -76,9 +76,6 @@
         .servicio__imagen {
             width: 100%;
         }
-        .par{
-            min-width: 300px;
-        }
     }
 
     .header{
@@ -111,6 +108,14 @@
         'imagen par';
         grid-column-gap: 15px;
         grid-row-gap: 15px;
+    }
+
+    .servicio--left{
+        grid-template-columns: auto 300px;
+        grid-template-rows: min-content auto;
+        grid-template-areas: 
+        'h3 imagen'
+        'par imagen';
     }
 
     #frame{

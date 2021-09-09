@@ -44,6 +44,7 @@ td ol {
 
 .servicio{
     padding: 10px;
+    margin:40px 0;
     display: flex;
     flex-direction: column;
     min-width: 30px;
@@ -57,8 +58,12 @@ td ol {
     .head3{
         grid-area: h3;
         font-size: 1.25rem;
+        line-height: 1.5rem;
+        padding: 20px 0;
         font-style: italic;
         font-weight: bold;
+        justify-self: center;
+        align-self: center;
     }
     
     .par{
@@ -80,8 +85,6 @@ td ol {
         animation-fill-mode: forwards;
     }
 }
-
-
 
 /*Características*/
 
