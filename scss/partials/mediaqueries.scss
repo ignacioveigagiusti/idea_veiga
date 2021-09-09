@@ -4,6 +4,14 @@
     select{
         width: 50vw;
     }
+
+    .products {
+
+        div {
+            width:100%;
+            min-width: 0;
+        }
+    }
 }
 
 @media screen and (min-width: 655px) and (max-width: 768px) {

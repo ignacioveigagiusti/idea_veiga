@@ -530,7 +530,10 @@ article {
 /*Media Queries*/
 @media screen and (max-width: 410px) {
   select {
-    width: 50vw; } }
+    width: 50vw; }
+  .products div {
+    width: 100%;
+    min-width: 0; } }
 
 @media screen and (min-width: 655px) and (max-width: 768px) {
   .servicio {
