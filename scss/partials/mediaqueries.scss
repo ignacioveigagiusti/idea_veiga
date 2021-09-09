@@ -33,7 +33,7 @@
 
     .servicio{
         .head3{
-            font-size: 1.5rem;
+            font-size: 1.15rem;
         }
         .servicio__imagen {
             width: 100%;
@@ -58,7 +58,10 @@
         display: grid;
         grid-template-columns: auto auto auto 1fr;
         grid-template-rows: auto 1fr;
-        grid-template-areas: 'date1 hyphen date2 indexlinenews';  
+        grid-template-areas: 'date1 hyphen date2 indexlinenews'; 
+        .indexline__news{
+            justify-content: flex-start;
+        } 
     }
 
     .servicio{
