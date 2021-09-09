@@ -95,7 +95,8 @@ h4, h5, h6{
             text-decoration: none;
             padding-left:16px;
             padding-right:16px;
-            white-space:nowrap;
+            white-space: pre-wrap;
+            text-align: center;
             color:white;
             transition: color 1s, font-weight 1s;
         }

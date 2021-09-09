@@ -293,7 +293,8 @@ h4, h5, h6 {
       text-decoration: none;
       padding-left: 16px;
       padding-right: 16px;
-      white-space: nowrap;
+      white-space: pre-wrap;
+      text-align: center;
       color: white;
       transition: color 1s, font-weight 1s; }
 
@@ -527,7 +528,7 @@ article {
 
 /*Media Queries*/
 /*Media Queries*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 410px) {
   select {
     width: 50vw; } }
 
