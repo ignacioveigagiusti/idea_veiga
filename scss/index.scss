@@ -99,7 +99,8 @@ h4, h5, h6{
             white-space: pre-wrap;
             text-align: center;
             color:white;
-            transition: color 1s, font-weight 1s;
+            transition: color 1s, 
+            font-weight 1s;
         }
     }
 }
@@ -172,7 +173,7 @@ article{
 }
 
 .indexsection {
-    padding: 24px 24px;
+    padding: 24px 0;
 }  
 
 .indexline{

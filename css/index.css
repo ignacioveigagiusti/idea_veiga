@@ -154,7 +154,6 @@ td ol {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: stretch;
   gap: 20px;
   overflow: hidden; }
@@ -303,7 +302,7 @@ h4, h5, h6 {
       white-space: pre-wrap;
       text-align: center;
       color: white;
-      transition: color 1s, font-weight 1s; }
+      transition: color 1s,  font-weight 1s; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: white; }
@@ -358,7 +357,7 @@ article {
   z-index: 2; }
 
 .indexsection {
-  padding: 24px 24px; }
+  padding: 24px 0; }
 
 .indexline {
   font-weight: bold;
@@ -588,6 +587,8 @@ article {
     gap: 1vw; }
     .header .header__pagetitle {
       flex-direction: row; }
+  .indexsection h2 {
+    text-align: center; }
   .indexline {
     display: grid;
     grid-template-columns: auto auto auto 1fr;
