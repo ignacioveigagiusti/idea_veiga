@@ -1,0 +1,2 @@
+Este sitio fue creado durante el curso de Desarrollo Web del instituto Coderhouse en Agosto de 2021 por Ignacio Veiga para presentarse como proyecto final de la cursada.
+El mismo respresenta una compañía ficticia y no fue realizado con fines comerciales reales.
