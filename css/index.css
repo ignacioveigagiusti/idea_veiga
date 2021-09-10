@@ -194,8 +194,8 @@ iframe {
 
 /*Nosotros*/
 form fieldset {
-  padding: 10px;
-  background-image: url(../Images/logoISV.jpg);
+  padding: 1rem 2rem;
+  background-image: url(../Images/logoISV.png);
   background-repeat: repeat;
   background-size: 40px;
   animation: fadeInAnimation ease 2s;
@@ -235,6 +235,7 @@ h2 {
   animation-fill-mode: forwards; }
 
 h3 {
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
   margin: 5px;
   border: 1px;
