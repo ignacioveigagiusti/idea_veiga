@@ -14,6 +14,31 @@ ul {
   overflow: hidden; }
 
 /* Variables */
+/* Maps y Bucles */
+.twitter {
+  transition: all 1s; }
+
+.twitter:hover {
+  filter: invert(61%) sepia(83%) saturate(1549%) hue-rotate(179deg) brightness(100%) contrast(87%); }
+
+.facebook {
+  transition: all 1s; }
+
+.facebook:hover {
+  filter: invert(32%) sepia(9%) saturate(3194%) hue-rotate(183deg) brightness(99%) contrast(96%); }
+
+.instagram {
+  transition: all 1s; }
+
+.instagram:hover {
+  filter: invert(24%) sepia(59%) saturate(3452%) hue-rotate(265deg) brightness(80%) contrast(80%); }
+
+.linkedin {
+  transition: all 1s; }
+
+.linkedin:hover {
+  filter: invert(21%) sepia(86%) saturate(4345%) hue-rotate(187deg) brightness(95%) contrast(101%); }
+
 /*Mixins*/
 body {
   display: grid;
@@ -183,6 +208,7 @@ iframe {
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
   min-height: 150vh;
   min-width: 0vh;
   max-width: 90vw;
@@ -204,6 +230,12 @@ form fieldset {
   form fieldset legend {
     font-size: 1rem;
     font-weight: bolder; }
+  form fieldset .btn-primary {
+    background-color: #004086;
+    color: honeydew; }
+  form fieldset .btn-secondary {
+    background-color: gray;
+    color: honeydew; }
 
 .nosotros p {
   animation: fadeIn ease 1.5s;
@@ -317,7 +349,7 @@ h4, h5, h6 {
 
 /*Secciones*/
 section {
-  padding: 24px; }
+  padding: 24px 0; }
 
 article {
   margin-top: 10px;
@@ -330,7 +362,7 @@ article {
   animation-fill-mode: forwards; }
 
 .carousel {
-  width: 111.111%;
+  width: 111.11111%;
   align-self: center; }
 
 .carousel-item {
@@ -510,7 +542,7 @@ article {
     animation-play-state: paused; }
 
 .socialMedia li a:hover {
-  filter: invert(50%) sepia(0%) saturate(29%) hue-rotate(189deg) brightness(101%) contrast(83%);
+  /*filter: invert(50%) sepia(0%) saturate(29%) hue-rotate(189deg) brightness(101%) contrast(83%);*/
   transform: scale(1.2, 1.2); }
 
 .socialMedia li .twitter:hover {
@@ -550,7 +582,7 @@ article {
   .table .table__hide {
     display: none; }
   section {
-    padding: 12px; }
+    padding: 12px 0; }
   article {
     margin-top: 5px;
     margin-bottom: 5px; } }
@@ -592,7 +624,7 @@ article {
     text-align: center; }
   .indexline {
     display: grid;
-    grid-template-columns: auto auto auto 1fr;
+    grid-template-columns: .35fr auto auto 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas: 'date1 hyphen date2 indexlinenews'; }
     .indexline .indexline__news {

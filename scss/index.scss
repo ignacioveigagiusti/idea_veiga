@@ -122,7 +122,7 @@ h4, h5, h6{
 /*Secciones*/
 
 section {
-    padding: 24px;
+    padding: 24px 0;
 }
 
 article{
@@ -139,7 +139,7 @@ article{
 }
 
 .carousel {
-    width: 111.111%;
+    width: (10/9) * 100% ;
     align-self: center;
 }
 
@@ -349,7 +349,7 @@ article{
 }
 
 .socialMedia li a:hover {
-    filter: invert(50%) sepia(0%) saturate(29%) hue-rotate(189deg) brightness(101%) contrast(83%);    
+    /*filter: invert(50%) sepia(0%) saturate(29%) hue-rotate(189deg) brightness(101%) contrast(83%);*/    
     transform:scale(1.2,1.2);
 } 
 

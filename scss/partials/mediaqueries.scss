@@ -29,7 +29,7 @@
     }
     
     section {
-        padding: 12px;
+        padding: 12px 0;
     }
     
     article{
@@ -104,7 +104,7 @@
 
     .indexline {
         display: grid;
-        grid-template-columns: auto auto auto 1fr;
+        grid-template-columns: .35fr auto auto 1fr;
         grid-template-rows: auto 1fr;
         grid-template-areas: 'date1 hyphen date2 indexlinenews'; 
         .indexline__news{

@@ -127,7 +127,7 @@ iframe{
     height: 100%;
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 50px;
     min-height: 150vh;
     min-width: 0vh;
     max-width: 90vw;
@@ -154,6 +154,16 @@ form fieldset{
     legend{
         font-size: 1rem;
         font-weight: bolder;
+    }
+
+    .btn-primary{
+        background-color: $ISVblue;
+        color: honeydew;
+    }
+
+    .btn-secondary{
+        background-color:gray;
+        color: honeydew;
     }
 }
 
