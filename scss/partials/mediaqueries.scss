@@ -47,7 +47,7 @@
     }
 
     .servicio .par{
-        min-width: 0vh;
+        min-width: 0;
     }
 
     .servicio .servicio__imagen {
@@ -65,13 +65,18 @@
         font-size: 2em;    
     }
 
+    h2{
+        font-size: 1.75rem;
+        text-align: start;    
+    }
+
     h3{
         font-size: 1.5rem;
     }
 
     .servicio{
         .head3{
-            font-size: 1.15rem;
+            font-size: 1.5rem;
         }
         .servicio__imagen {
             width: 100%;
