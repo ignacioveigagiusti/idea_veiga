@@ -471,6 +471,10 @@ article {
   margin: 24px 0px 32px 0px;
   gap: 16px;
   align-items: center; }
+  .apps .appscontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
   .apps div {
     display: flex;
     flex-direction: column;

@@ -274,6 +274,11 @@ article{
     margin: 24px 0px 32px 0px;
     gap: 16px;
     align-items: center;
+    .appscontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     div {
         display: flex;
         flex-direction: column;
